@@ -1,0 +1,123 @@
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
+}
+
+.titulo-destaque{
+    text-align: center;
+    font-size: 5rem;
+    clear: left;    
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 60px 0 60px 0;
+}
+
+.slider-destaques{
+    max-width: 1300px;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 14%), 0px 4px 5px rgba(0, 0, 0, 14%), 0px -2px 8px rgba(0, 0, 0, 14%);
+    border: 3px transparent solid;
+    margin-top: 220px;
+}
+
+.slide-label{
+    position: absolute;
+    bottom: 20px;
+    left: 95%;
+    transform: translate(-95%);
+    display: flex;
+}
+
+.slide-dot{
+    width: 6px;
+    height: 6px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+.slides input{
+    display: none;
+}
+
+.slide-dot:hover{
+    background-color: white;
+}
+
+.slides{
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slide{
+    width: 25%;
+    transition: 0.8s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -50%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -75%;
+}
+
+.auto-slide div{
+    width: 6px;
+    height: 6px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auto-slide{
+    position: absolute;
+    bottom: 20px;
+    left: 95%;
+    transform: translate(-95%);
+    display: flex;
+}
+
+#slide1:checked ~ .auto-slide .auto-btn1{
+    background-color: white;
+}
+
+#slide2:checked ~ .auto-slide .auto-btn2{
+    background-color: white;
+}
+
+#slide3:checked ~ .auto-slide .auto-btn3{
+    background-color: white;
+}
+
+#slide4:checked ~ .auto-slide .auto-btn4{
+    background-color: white;
+}

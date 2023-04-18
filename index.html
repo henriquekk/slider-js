@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doce Arte Studio</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <main>
+        <div class="destaque">
+            <h1 class="titulo-destaque">Destaques</h1>
+            <div class="slider-destaques">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                        
+                    <div class="slide s1">
+                        <img src="./images/banner-principal.png" alt="Paisagem">
+                    </div>
+                    <div class="slide">
+                       <img src="./images/banner-2.png" alt="Paisagem">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/banner-3.png" alt="Paisagem">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/banner-4.png" alt="Paisagem">
+                    </div>
+                
+                    <div class="auto-slide">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+
+                <div class="slide-label">
+                    <label class="slide-dot" for="slide1"></label>
+                    <label class="slide-dot" for="slide2"></label>
+                    <label class="slide-dot" for="slide3"></label>
+                    <label class="slide-dot" for="slide4"></label>
+                </div>
+            </div>
+        </div>
+        <script src="js/slider.js"></script>
+    </body>
+</html>
